@@ -15,6 +15,10 @@
 		4EC5D0CB1C0F24A300ED7293 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EC5D0C91C0F24A300ED7293 /* LaunchScreen.storyboard */; };
 		4EC5D0D61C0F24A300ED7293 /* textFieldChallegeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC5D0D51C0F24A300ED7293 /* textFieldChallegeAppTests.swift */; };
 		4EC5D0E11C0F24A300ED7293 /* textFieldChallegeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC5D0E01C0F24A300ED7293 /* textFieldChallegeAppUITests.swift */; };
+		4EC5D0F01C0F26E600ED7293 /* ZipCodeTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC5D0EF1C0F26E600ED7293 /* ZipCodeTextFieldDelegate.swift */; settings = {ASSET_TAGS = (); }; };
+		4EC5D0F21C0F270500ED7293 /* CashTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC5D0F11C0F270500ED7293 /* CashTextFieldDelegate.swift */; settings = {ASSET_TAGS = (); }; };
+		4EC5D0F51C0F276000ED7293 /* LockableTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC5D0F41C0F276000ED7293 /* LockableTextFieldDelegate.swift */; settings = {ASSET_TAGS = (); }; };
+		4EC5D0F71C0F2DDB00ED7293 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC5D0F61C0F2DDB00ED7293 /* StringUtils.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		4EC5D0DC1C0F24A300ED7293 /* textFieldChallegeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = textFieldChallegeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EC5D0E01C0F24A300ED7293 /* textFieldChallegeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textFieldChallegeAppUITests.swift; sourceTree = "<group>"; };
 		4EC5D0E21C0F24A300ED7293 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EC5D0EF1C0F26E600ED7293 /* ZipCodeTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipCodeTextFieldDelegate.swift; sourceTree = "<group>"; };
+		4EC5D0F11C0F270500ED7293 /* CashTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CashTextFieldDelegate.swift; sourceTree = "<group>"; };
+		4EC5D0F41C0F276000ED7293 /* LockableTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LockableTextFieldDelegate.swift; sourceTree = "<group>"; };
+		4EC5D0F61C0F2DDB00ED7293 /* StringUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +109,13 @@
 			children = (
 				4EC5D0BD1C0F24A300ED7293 /* AppDelegate.swift */,
 				4EC5D0BF1C0F24A300ED7293 /* ViewController.swift */,
+				4EC5D0EE1C0F26B200ED7293 /* TextFieldDelegates */,
 				4EC5D0C11C0F24A300ED7293 /* Main.storyboard */,
 				4EC5D0C71C0F24A300ED7293 /* Assets.xcassets */,
 				4EC5D0C91C0F24A300ED7293 /* LaunchScreen.storyboard */,
 				4EC5D0CC1C0F24A300ED7293 /* Info.plist */,
 				4EC5D0C41C0F24A300ED7293 /* textFieldChallegeApp.xcdatamodeld */,
+				4EC5D0F61C0F2DDB00ED7293 /* StringUtils.swift */,
 			);
 			path = textFieldChallegeApp;
 			sourceTree = "<group>";
@@ -126,6 +136,16 @@
 				4EC5D0E21C0F24A300ED7293 /* Info.plist */,
 			);
 			path = textFieldChallegeAppUITests;
+			sourceTree = "<group>";
+		};
+		4EC5D0EE1C0F26B200ED7293 /* TextFieldDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				4EC5D0EF1C0F26E600ED7293 /* ZipCodeTextFieldDelegate.swift */,
+				4EC5D0F11C0F270500ED7293 /* CashTextFieldDelegate.swift */,
+				4EC5D0F41C0F276000ED7293 /* LockableTextFieldDelegate.swift */,
+			);
+			name = TextFieldDelegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +280,11 @@
 			files = (
 				4EC5D0C61C0F24A300ED7293 /* textFieldChallegeApp.xcdatamodeld in Sources */,
 				4EC5D0C01C0F24A300ED7293 /* ViewController.swift in Sources */,
+				4EC5D0F21C0F270500ED7293 /* CashTextFieldDelegate.swift in Sources */,
+				4EC5D0F51C0F276000ED7293 /* LockableTextFieldDelegate.swift in Sources */,
 				4EC5D0BE1C0F24A300ED7293 /* AppDelegate.swift in Sources */,
+				4EC5D0F01C0F26E600ED7293 /* ZipCodeTextFieldDelegate.swift in Sources */,
+				4EC5D0F71C0F2DDB00ED7293 /* StringUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +511,7 @@
 				4EC5D0E71C0F24A300ED7293 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4EC5D0E81C0F24A300ED7293 /* Build configuration list for PBXNativeTarget "textFieldChallegeAppTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +520,7 @@
 				4EC5D0EA1C0F24A300ED7293 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4EC5D0EB1C0F24A300ED7293 /* Build configuration list for PBXNativeTarget "textFieldChallegeAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +529,7 @@
 				4EC5D0ED1C0F24A300ED7293 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
